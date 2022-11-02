@@ -18,7 +18,7 @@ function GetRaceInfo() {
 
   let rnd_year = getRndInteger(1950, 2022);
   let race_num = getRndInteger(1, seasons_races[rnd_year] + 1);
-  let api_call = `http://ergast.com/api/f1/${rnd_year}/${race_num}/results.json`
+  let api_call = `https://ergast.com/api/f1/${rnd_year}/${race_num}/results.json`
 
   const [info, setInfo] = useState([]);
   const getAPI = () => {
